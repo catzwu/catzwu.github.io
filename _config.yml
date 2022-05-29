@@ -5,13 +5,13 @@ image_thumbs_loc: "/images/thumbs"
 google_analytics: ""
 
 # UI configs
-title: "Photography by Catherine Wu"
+title: "Photography by Catherine"
 subtitle: "See the world through my eyes!"
-author: "Catherine Wu"
+author: "Ram"
 header:
  title: "Photography"
- subtitle: "by Catherine Wu"
+ subtitle: "by Catherine"
 footer:
  name: "Hey there, I'm Catherine"
- bio: "I am a developer and a tech aficionado from India. Love making teeny tiny apps solving tiny problems in life and now learning photography."
+ bio: "Thinker, scientist, amateur photographer, with an affinity for cats."
 web_design: "AJ"
