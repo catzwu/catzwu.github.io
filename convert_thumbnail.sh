@@ -15,4 +15,5 @@ do
     # Creates thumbnail and adds -thumb to end of new file
     convert -thumbnail ${WIDTH}x $i "../thumbs/$filename.jpg"
     mv $i "../fulls/$filename.jpg"
+    echo "processed file " $i
 done
