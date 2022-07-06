@@ -4,7 +4,8 @@
 
 # Sets the desired thumbnail width
 WIDTH=500
-cd images/raw/
+cd images/raw/ 
+
 # Loops through all jpg files in current folder
 for i in *.jpg
 do
@@ -15,5 +16,7 @@ do
     # Creates thumbnail and adds -thumb to end of new file
     convert -thumbnail ${WIDTH}x $i "../thumbs/$filename.jpg"
     mv $i "../fulls/$filename.jpg"
+    # Adds image name to captions.json
+    jq --arg filename "$filename.jpg" '. + { ($filename): " " }' ../../assets/js/captions.json | sponge ../../assets/js/captions.json 
     echo "processed file " $i
 done
